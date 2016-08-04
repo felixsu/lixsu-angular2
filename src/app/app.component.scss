@@ -1,31 +1,38 @@
 .app-component{
-  .app-content {
-    padding: 20px;
-  }
+
+  height: 100%;
 
   .app-content md-card {
     margin: 20px;
   }
 
   .app-sidenav {
-    padding: 10px;
     min-width: 320px;
     max-width: 320px;
 
     .nav-head {
       height: 200px;
 
-      .nav-pic {
-        background: green;
+      .nav-pic-name-container {
         height: 150px;
-        font-weight: bold;
-      }
 
-      .nav-name {
-        height: 150px;
-        font-weight: bold;
-      }
+        .nav-pic {
+          padding: 64px;
+          color: white;
+          align-items: center;
+          font-size: 32px;
+          display: inline;
+          background: green;
+          font-weight: bold;
+        }
 
+        .nav-name {
+          padding-left: 4px;
+          display: inline;
+          font-weight: bold;
+        }
+      }
+      
       .nav-email {
         font-weight: bold;
       }
