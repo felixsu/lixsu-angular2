@@ -9,7 +9,31 @@
 
   .app-sidenav {
     padding: 10px;
-    min-width: 100px;
+    min-width: 320px;
+    max-width: 320px;
+
+    .nav-head {
+      height: 200px;
+
+      .nav-pic {
+        background: green;
+        height: 150px;
+        font-weight: bold;
+      }
+
+      .nav-name {
+        height: 150px;
+        font-weight: bold;
+      }
+
+      .nav-email {
+        font-weight: bold;
+      }
+    }
+
+    .nav-body {
+
+    }
   }
 
   .app-content md-checkbox {

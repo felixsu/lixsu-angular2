@@ -1,6 +1,17 @@
 <md-sidenav-layout class="app-component">
-  <md-sidenav #sidenav mode="side" class="app-sidenav">
-    Sidenav
+  <md-sidenav #sidenav mode="over" class="app-sidenav">
+    <div class="nav-head" flex layout="row" layout-wrap>
+      <div class="nav-pic" flex="66">
+        P
+      </div>
+      <div class="nav-name" flex="33">
+        Hi Felix!
+      </div>
+      <div class="nav-email" flex="100">
+        felix.soewito@gmail.com
+      </div>
+    </div>
+    <div class="nav-body">Content</div>
   </md-sidenav>
 
   <md-toolbar color="primary">
@@ -20,102 +31,6 @@
       <button md-raised-button>RAISED</button>
       <button md-raised-button color="primary">PRIMARY RAISED</button>
       <button md-raised-button color="accent">ACCENT RAISED</button>
-    </md-card>
-
-    <md-card>
-      <md-checkbox>Unchecked</md-checkbox>
-      <md-checkbox [checked]="true">Checked</md-checkbox>
-      <md-checkbox [indeterminate]="true">Indeterminate</md-checkbox>
-      <md-checkbox [disabled]="true">Disabled</md-checkbox>
-    </md-card>
-
-    <md-card>
-      <md-radio-button name="symbol">Alpha</md-radio-button>
-      <md-radio-button name="symbol">Beta</md-radio-button>
-      <md-radio-button name="symbol" disabled>Gamma</md-radio-button>
-    </md-card>
-
-    <md-card class="app-input-section">
-      <md-input placeholder="First name"></md-input>
-
-      <md-input #nickname placeholder="Nickname" maxlength="50">
-        <md-hint align="end">
-          {{nickname.characterCount}} / 50
-        </md-hint>
-      </md-input>
-
-      <md-input>
-        <md-placeholder>
-          <i class="material-icons app-input-icon">android</i> Favorite phone
-        </md-placeholder>
-      </md-input>
-
-      <md-input placeholder="Motorcycle model">
-        <span md-prefix>
-          <i class="material-icons app-input-icon">motorcycle</i>
-          &nbsp;
-        </span>
-      </md-input>
-    </md-card>
-
-    <md-card>
-      <md-list class="app-list">
-        <md-list-item *ngFor="let food of foods">
-          <h3 md-line>{{food.name}}</h3>
-          <p md-line class="demo-secondary-text">{{food.rating}}</p>
-        </md-list-item>
-      </md-list>
-    </md-card>
-
-    <md-card>
-      <md-spinner class="app-spinner"></md-spinner>
-      <md-spinner color="accent" class="app-spinner"></md-spinner>
-    </md-card>
-
-    <md-card>
-      <label>
-        Indeterminate progress-bar
-        <md-progress-bar
-            class="app-progress"
-            mode="indeterminate"
-            aria-label="Indeterminate progress-bar example"></md-progress-bar>
-      </label>
-
-      <label>
-        Determinate progress bar - {{progress}}%
-        <md-progress-bar
-            class="app-progress"
-            color="accent"
-            mode="determinate"
-            [value]="progress"
-            aria-label="Determinate progress-bar example"></md-progress-bar>
-      </label>
-    </md-card>
-
-    <md-card>
-      <md-tab-group>
-        <md-tab>
-          <template md-tab-label>
-            Earth
-          </template>
-          <template md-tab-content>
-            <p>EARTH</p>
-          </template>
-        </md-tab>
-        <md-tab>
-          <template md-tab-label>
-            Fire
-          </template>
-          <template md-tab-content>
-            <p>FIRE</p>
-          </template>
-        </md-tab>
-      </md-tab-group>
-    </md-card>
-
-
-    <md-card>
-      <md-icon>build</md-icon>
     </md-card>
 
   </div>
