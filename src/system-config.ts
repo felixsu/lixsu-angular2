@@ -17,7 +17,7 @@ const map: any = {
 const packages: any = {
   'moment':{
     format: 'cjs'
-  }
+  },
 };
 
 // put the names of any of your Material components here

@@ -40,24 +40,17 @@ import * as moment from 'moment';
   ],
 })
 export class AppComponent {
-  foods: any[] = [
-    {name: 'Pizza', rating: 'Excellent'},
-    {name: 'Burritos', rating: 'Great'},
-    {name: 'French fries', rating: 'Pretty good'},
-  ];
-
-  progress: number = 0;
+  counter : number = 0;
   currentTime : string = moment().format('MMMM Do YYYY, h:mm:ss a');
+  receivedMessage : string = "init";
 
   constructor() {
-
-    // Update the value for the progress-bar on an interval.
-    setInterval(() => {
-      this.progress = (this.progress + Math.floor(Math.random() * 4) + 1) % 100;
-    }, 200);
-
     setInterval(updateTime => { 
       this.currentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
     } ,1000);
+  }
+
+  sendMessage() : void {
+    this.counter++;
   }
 }
