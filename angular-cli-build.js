@@ -47,6 +47,7 @@ module.exports = function(defaults) {
       'rxjs/**/*.+(js|js.map)',
       '@angular/**/*.+(js|js.map)',
       '@angular2-material/**/*',
+      'moment/moment.js',
     ]
   });
 

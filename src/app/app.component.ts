@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
+import {Observable} from 'rxjs/Rx';
 import {MdUniqueSelectionDispatcher} from '@angular2-material/core';
 import {MD_SIDENAV_DIRECTIVES} from '@angular2-material/sidenav';
 import {MD_TOOLBAR_DIRECTIVES} from '@angular2-material/toolbar';
@@ -13,6 +14,8 @@ import {MD_INPUT_DIRECTIVES} from '@angular2-material/input';
 import {MD_LIST_DIRECTIVES} from '@angular2-material/list';
 import {MD_ICON_DIRECTIVES, MdIconRegistry} from '@angular2-material/icon';
 import {MD_TABS_DIRECTIVES} from '@angular2-material/tabs';
+import * as moment from 'moment';
+
 
 @Component({
   moduleId: module.id,
@@ -44,6 +47,7 @@ export class AppComponent {
   ];
 
   progress: number = 0;
+  currentTime : string = moment().format('MMMM Do YYYY, h:mm:ss a');
 
   constructor() {
 
@@ -51,5 +55,9 @@ export class AppComponent {
     setInterval(() => {
       this.progress = (this.progress + Math.floor(Math.random() * 4) + 1) % 100;
     }, 200);
+
+    setInterval(updateTime => { 
+      this.currentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
+    } ,1000);
   }
 }
