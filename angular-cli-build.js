@@ -34,10 +34,12 @@ var options =  {
 
 module.exports = function(defaults) {
   var appTree = new Angular2App(defaults, {
+    //https://www.codementor.io/angularjs/tutorial/compiling-sass-postcss-with-angular-cli#
     sassCompiler: {
         includePaths: [
           'src/style'
         ]},
+    //defaults
     vendorNpmFiles: [
       'systemjs/dist/system-polyfills.js',
       'systemjs/dist/system.src.js',
@@ -48,7 +50,8 @@ module.exports = function(defaults) {
       '@angular/**/*.+(js|js.map)',
       '@angular2-material/**/*',
       'moment/moment.js',
-      'socket.io-client/socket.io.js'
+      'socket.io-client/socket.io.js',
+      'chart.js/dist/Chart.js',
     ]
   });
 

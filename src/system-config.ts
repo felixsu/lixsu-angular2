@@ -11,7 +11,8 @@
 const map: any = {
   '@angular2-material': 'vendor/@angular2-material',
   'moment': 'vendor/moment/moment.js',
-  'socket.io-client': 'vendor/socket.io-client/socket.io.js'
+  'socket.io-client': 'vendor/socket.io-client/socket.io.js',
+  'chartjs': 'vendor/chart.js/dist/Chart.js'
 };
 
 /** User packages configuration. */
@@ -22,6 +23,10 @@ const packages: any = {
   'socket.io-client':{
     format: 'cjs',
     defaultExtension : 'js'
+  },
+  chartjs: { 
+    format: 'cjs',
+    defaultExtension: 'js'
   }
 };
 
