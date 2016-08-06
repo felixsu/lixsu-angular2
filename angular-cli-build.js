@@ -48,6 +48,7 @@ module.exports = function(defaults) {
       '@angular/**/*.+(js|js.map)',
       '@angular2-material/**/*',
       'moment/moment.js',
+      'socket.io-client/socket.io.js'
     ]
   });
 

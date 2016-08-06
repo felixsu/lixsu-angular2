@@ -6,6 +6,8 @@
   },
   "globalDependencies": {
     "es6-shim": "registry:dt/es6-shim#0.31.2+20160602141504",
+    "mocha": "registry:dt/mocha#2.2.5+20160720003353",
+    "socket.io-client": "registry:dt/socket.io-client#1.4.4+20160317120654",
     "sockjs": "registry:dt/sockjs#0.3.0+20160626235243"
   }
 }

@@ -11,13 +11,18 @@
 const map: any = {
   '@angular2-material': 'vendor/@angular2-material',
   'moment': 'vendor/moment/moment.js',
+  'socket.io-client': 'vendor/socket.io-client/socket.io.js'
 };
 
 /** User packages configuration. */
 const packages: any = {
   'moment':{
-    format: 'cjs'
+    format: 'cjs',
   },
+  'socket.io-client':{
+    format: 'cjs',
+    defaultExtension : 'js'
+  }
 };
 
 // put the names of any of your Material components here

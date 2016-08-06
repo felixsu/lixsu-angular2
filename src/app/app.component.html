@@ -41,6 +41,18 @@
       </md-card-actions>
     </md-card>
 
+    <md-card>
+      <md-card-subtitle>Subtitle first</md-card-subtitle>
+      <md-card-title>Card with title</md-card-title>   
+      <md-card-content>
+          <p>{{health.statusCode}}</p>
+          <p>{{health.statusMessage}}</p>
+      </md-card-content>
+      <md-card-actions>
+          <button md-raised-button color="primary" (click)="getHealthStatus()">UPDATE HEALTH</button>
+      </md-card-actions>
+    </md-card>
+
   </div>
 
 </md-sidenav-layout>
