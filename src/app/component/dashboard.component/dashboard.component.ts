@@ -18,6 +18,7 @@ import {MD_TABS_DIRECTIVES} from '@angular2-material/tabs';
 import * as moment from 'moment';
 import { HealthCheckService } from '../../service/health-check.service';
 import { Health } from '../../model/health.model';
+import { WebSocketComponent } from './web-socket.component/web-socket.component';
 
 @Component({
     moduleId: module.id,
@@ -38,6 +39,7 @@ import { Health } from '../../model/health.model';
         MD_PROGRESS_BAR_DIRECTIVES,
         MD_ICON_DIRECTIVES,
         MD_TABS_DIRECTIVES,
+        WebSocketComponent
     ],
 })
 export class DashboardComponent implements OnInit, OnDestroy {
