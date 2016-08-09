@@ -34,7 +34,7 @@ export class WebSocketComponent implements OnInit, OnDestroy {
         console.log(data);
         console.log('message received: ', data.data);
         this.receivedMsg = data.data;
-        console.log(this.receivedMsg);
+        console.log("text should updated : " + this.receivedMsg);
     }
 
     sockOnOpen() {
